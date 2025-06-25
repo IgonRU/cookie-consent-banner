@@ -1,0 +1,4 @@
+<div *ngIf="!consentGiven" class="cookie-banner">
+  <span class="banner-message" [innerHTML]="messageText"></span>
+  <button (click)="acceptCookies()">{{ buttonText }}</button>
+</div>

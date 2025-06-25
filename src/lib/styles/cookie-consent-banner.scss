@@ -1,0 +1,60 @@
+@import "css3-flexbox";
+@import "css3-mixins";
+
+.cookie-banner {
+  font-family: 'Roboto', sans-serif !important;
+  @include css3-flex-display();
+  @include css3-align-items(center);
+  @include css3-justify-content(center);
+  column-gap: 4.5rem;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  padding: 1.5rem 2rem;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
+  @include css3-box-shadow(0px,2px,5px);
+
+  z-index: 10000;
+
+  .banner-message {
+    line-height: 1.1;
+    font-weight: 400;
+
+    a {
+      font-weight: 400;
+      color: black;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+      }
+    }
+  }
+
+  button {
+    font-family: 'Roboto', sans-serif !important;
+    @include css3-flex-display();
+    @include css3-align-items(center);
+    align-self: flex-end;
+    padding: 1.1rem 1.6rem;
+    background-color: #3769F5;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    line-height: 1.1rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+}
+

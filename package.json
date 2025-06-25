@@ -1,0 +1,8 @@
+{
+  "name": "@igon/cookie-consent-banner",
+  "version": "1.3.7",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
+    "@angular/core": "^6.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0"
+  }
+}
